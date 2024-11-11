@@ -22,3 +22,23 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.Category.FrmCategory.resources
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.Product.FrmProduct.resources
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\Guna.UI2.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\GUI.exe.config
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\GUI.exe
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\GUI.pdb
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\BLL.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\Component.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\DTO.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\Guna.UI2.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\DAL.dll
+D:\BackupData\BT PTUDTM\laptop-application\GUI\bin\Debug\DTO.dll.config
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.Category.FrmCategory.resources
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.Home.FrmHome.resources
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.Login.FrmLogin.resources
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.Product.FrmProduct.resources
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.exe
+D:\BackupData\BT PTUDTM\laptop-application\GUI\obj\Debug\GUI.pdb
