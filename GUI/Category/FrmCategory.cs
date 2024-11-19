@@ -29,34 +29,34 @@ namespace GUI.Category
 
         private void DgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvCategory.Rows[e.RowIndex];
                 string maHang = row.Cells["MaHang"].Value.ToString();
                 string tenHang = row.Cells["TenHang"].Value.ToString();
                 txtIDCategory.Text = maHang;
                 txtNameCategory.Text = tenHang;
-            }    
+            }
         }
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             string searchKeyword = txtSearch.Text.Trim();
 
-            if (string.IsNullOrEmpty(searchKeyword)) 
+            if (string.IsNullOrEmpty(searchKeyword))
             {
-                LoadData(); 
+                LoadData();
             }
             else
             {
-                hangList = bllCategory.SearchHangs(searchKeyword); 
-                dgvCategory.DataSource = new BindingList<hang>(hangList); 
+                hangList = bllCategory.SearchHangs(searchKeyword);
+                dgvCategory.DataSource = new BindingList<hang>(hangList);
             }
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvCategory.SelectedRows.Count > 0) 
+            if (dgvCategory.SelectedRows.Count > 0)
             {
                 var selectedRow = dgvCategory.SelectedRows[0];
                 if (selectedRow != null)
@@ -67,8 +67,8 @@ namespace GUI.Category
                         txtIDCategory.Text = selectedHang.MaHang.ToString();
                         txtNameCategory.Text = selectedHang.TenHang;
 
-                        currentMaHang = selectedHang.MaHang; 
-                        isEditing = true; 
+                        currentMaHang = selectedHang.MaHang;
+                        isEditing = true;
 
                         txtIDCategory.Enabled = false;
                     }
@@ -92,7 +92,7 @@ namespace GUI.Category
                     if (confirmResult == DialogResult.Yes)
                     {
                         bllCategory.DeleteHang(selectedHang.MaHang);
-                        LoadData(); 
+                        LoadData();
                     }
                 }
             }
@@ -110,11 +110,11 @@ namespace GUI.Category
             {
                 var updatedHang = new hang
                 {
-                    MaHang = currentMaHang, 
-                    TenHang = txtNameCategory.Text 
+                    MaHang = currentMaHang,
+                    TenHang = txtNameCategory.Text
                 };
 
-                bllCategory.UpdateHang(updatedHang); 
+                bllCategory.UpdateHang(updatedHang);
                 MessageBox.Show("Đã cập nhật hãng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -128,18 +128,18 @@ namespace GUI.Category
                 MessageBox.Show("Đã thêm hãng mới thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            LoadData(); 
+            LoadData();
             txtIDCategory.Text = "";
-            txtNameCategory.Text = ""; 
-            isEditing = false; 
+            txtNameCategory.Text = "";
+            isEditing = false;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            txtIDCategory.Text = ""; 
-            txtNameCategory.Text = ""; 
-            txtIDCategory.Enabled = false; 
-            isEditing = false; 
+            txtIDCategory.Text = "";
+            txtNameCategory.Text = "";
+            txtIDCategory.Enabled = false;
+            isEditing = false;
         }
 
         public void LoadData()

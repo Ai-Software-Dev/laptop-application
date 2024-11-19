@@ -9,3 +9,14 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\Component\obj\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\Component\obj\Debug\Component.Properties.Resources.resources
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\Component\bin\Debug\Guna.UI2.dll
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\Component\obj\Debug\Component.csproj.CopyComplete
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\bin\Debug\Component.dll
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\bin\Debug\Component.pdb
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\bin\Debug\Guna.UI2.dll
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.csproj.AssemblyReference.cache
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.btnClose.resources
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.Properties.Resources.resources
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.csproj.GenerateResource.cache
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.csproj.CoreCompileInputs.cache
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.csproj.Up2Date
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.dll
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\Component\obj\Debug\Component.pdb

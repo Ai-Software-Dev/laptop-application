@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="laptop" Class="laptopDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTHU\SQLEXPRESS;Initial Catalog=laptop;User ID=sa" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="laptopConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.admin" Member="admins">
-    <Type Name="admin">
-      <Column Name="MaTaiKhoan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenTaiKhoan" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="MatKhau" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=XUANBINH\XUANBINH;Initial Catalog=laptop;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="laptopConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.users" Member="users">
     <Type Name="user">
       <Column Name="MaTaiKhoan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -16,6 +9,13 @@
       <Column Name="Email" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Association Name="user_giohang" Member="giohangs" ThisKey="MaTaiKhoan" OtherKey="MaTaiKhoan" Type="giohang" />
       <Association Name="user_hoadon" Member="hoadons" ThisKey="MaTaiKhoan" OtherKey="MaTaiKhoan" Type="hoadon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.admin" Member="admins">
+    <Type Name="admin">
+      <Column Name="MaTaiKhoan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTaiKhoan" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.chitietgiohang" Member="chitietgiohangs">

@@ -5,3 +5,10 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.dll
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.pdb
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\bin\Debug\DTO.dll.config
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\bin\Debug\DTO.dll.config
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\bin\Debug\DTO.dll
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\bin\Debug\DTO.pdb
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\obj\Debug\DTO.dll
+D:\HK7\PTPMUDTM\DoAn\SourceCode\ShopLaptop-Application\DTO\obj\Debug\DTO.pdb

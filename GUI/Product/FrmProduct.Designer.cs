@@ -31,7 +31,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtDescribe = new System.Windows.Forms.RichTextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.txtQuality = new System.Windows.Forms.TextBox();
             this.txtPIN = new System.Windows.Forms.TextBox();
@@ -67,8 +67,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtDescribe = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.panel1.SuspendLayout();
@@ -78,7 +76,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvProduct);
-            this.panel2.Location = new System.Drawing.Point(26, 645);
+            this.panel2.Location = new System.Drawing.Point(110, 645);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1309, 372);
             this.panel2.TabIndex = 19;
@@ -95,36 +93,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(146, 560);
+            this.panel1.Location = new System.Drawing.Point(230, 560);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(947, 79);
             this.panel1.TabIndex = 18;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Image = global::GUI.Properties.Resources.exit;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(740, 17);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(144, 40);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::GUI.Properties.Resources.update;
+            this.btnSave.Image = global::GUI.Properties.Resources.save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(566, 17);
+            this.btnSave.Location = new System.Drawing.Point(789, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(144, 40);
             this.btnSave.TabIndex = 3;
@@ -137,7 +121,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Image = global::GUI.Properties.Resources.update;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(383, 17);
+            this.btnUpdate.Location = new System.Drawing.Point(549, 17);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(144, 40);
             this.btnUpdate.TabIndex = 2;
@@ -150,7 +134,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Image = global::GUI.Properties.Resources.delete;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(204, 17);
+            this.btnDelete.Location = new System.Drawing.Point(319, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(144, 40);
             this.btnDelete.TabIndex = 1;
@@ -163,7 +147,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::GUI.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(34, 17);
+            this.btnAdd.Location = new System.Drawing.Point(87, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(144, 40);
             this.btnAdd.TabIndex = 0;
@@ -199,7 +183,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(250, 134);
+            this.txtSearch.Location = new System.Drawing.Point(460, 134);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(640, 39);
             this.txtSearch.TabIndex = 12;
@@ -208,7 +192,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(124, 147);
+            this.label2.Location = new System.Drawing.Point(334, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 26);
             this.label2.TabIndex = 11;
@@ -218,7 +202,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(395, 86);
+            this.label1.Location = new System.Drawing.Point(605, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(349, 37);
             this.label1.TabIndex = 10;
@@ -254,10 +238,18 @@
             this.panel3.Controls.Add(this.txtIDProduct);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtNameProduct);
-            this.panel3.Location = new System.Drawing.Point(15, 195);
+            this.panel3.Location = new System.Drawing.Point(99, 195);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1303, 344);
             this.panel3.TabIndex = 20;
+            // 
+            // txtDescribe
+            // 
+            this.txtDescribe.Location = new System.Drawing.Point(1051, 26);
+            this.txtDescribe.Name = "txtDescribe";
+            this.txtDescribe.Size = new System.Drawing.Size(204, 96);
+            this.txtDescribe.TabIndex = 41;
+            this.txtDescribe.Text = "";
             // 
             // cmbCategory
             // 
@@ -478,38 +470,18 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Tên sản phẩm:";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.button1.BackgroundImage = global::GUI.Properties.Resources.loupe;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(896, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 42);
-            this.button1.TabIndex = 13;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtDescribe
-            // 
-            this.txtDescribe.Location = new System.Drawing.Point(1051, 26);
-            this.txtDescribe.Name = "txtDescribe";
-            this.txtDescribe.Size = new System.Drawing.Size(204, 96);
-            this.txtDescribe.TabIndex = 41;
-            this.txtDescribe.Text = "";
-            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1347, 1043);
+            this.ClientSize = new System.Drawing.Size(1489, 1043);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
@@ -528,7 +500,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
@@ -539,7 +510,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label14;
