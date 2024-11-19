@@ -126,7 +126,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::GUI.Properties.Resources.update;
+            this.btnSave.Image = global::GUI.Properties.Resources.save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(732, 17);
             this.btnSave.Name = "btnSave";
