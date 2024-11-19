@@ -22,3 +22,7 @@ E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.Category.FrmCategory.resources
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\obj\Debug\GUI.Product.FrmProduct.resources
 E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\Guna.UI2.dll
+E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\CloudinaryDotNet.dll
+E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\Newtonsoft.Json.dll
+E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\CloudinaryDotNet.xml
+E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\GUI\bin\Debug\Newtonsoft.Json.xml

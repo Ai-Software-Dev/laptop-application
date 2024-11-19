@@ -5,6 +5,11 @@ using System.Windows.Forms;
 using BLL;
 using DTO;
 using System.IO;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using Component;
+using System.Net;
+using System.Drawing;
 
 namespace GUI.Category
 {
@@ -14,6 +19,8 @@ namespace GUI.Category
         List<hang> hangList = new List<hang>();
         private bool isEditing = false;
         private int currentMaHang;
+        private Cloundinary cloudinaryHelper = new Cloundinary();
+        private string uploadedImageUrl = "";
 
         public FrmCategory()
         {
@@ -24,39 +31,80 @@ namespace GUI.Category
             this.btnSave.Click += BtnSave_Click;
             this.btnDelete.Click += BtnDelete_Click;
             this.btnUpdate.Click += BtnUpdate_Click;
+            btnUploadLogo.Click += BtnUploadLogo_Click;
             dgvCategory.CellClick += DgvCategory_CellClick;
+        }
+
+        private void BtnUploadLogo_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        uploadedImageUrl = cloudinaryHelper.UploadImage(openFileDialog.FileName);
+                        picLogo.Load(uploadedImageUrl); // Hiển thị ảnh trong PictureBox
+                        MessageBox.Show("Upload thành công!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}");
+                    }
+                }
+            }
         }
 
         private void DgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvCategory.Rows[e.RowIndex];
                 string maHang = row.Cells["MaHang"].Value.ToString();
                 string tenHang = row.Cells["TenHang"].Value.ToString();
+                string logoUrl = row.Cells["Logo"].Value.ToString();
+
                 txtIDCategory.Text = maHang;
                 txtNameCategory.Text = tenHang;
-            }    
+
+                if (!string.IsNullOrEmpty(logoUrl))
+                {
+                    try
+                    {
+                        picLogo.Load(logoUrl);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error loading image: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    picLogo.Image = null;
+                }
+            }
         }
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             string searchKeyword = txtSearch.Text.Trim();
 
-            if (string.IsNullOrEmpty(searchKeyword)) 
+            if (string.IsNullOrEmpty(searchKeyword))
             {
-                LoadData(); 
+                LoadData();
             }
             else
             {
-                hangList = bllCategory.SearchHangs(searchKeyword); 
-                dgvCategory.DataSource = new BindingList<hang>(hangList); 
+                hangList = bllCategory.SearchHangs(searchKeyword);
+                dgvCategory.DataSource = new BindingList<hang>(hangList);
             }
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvCategory.SelectedRows.Count > 0) 
+            if (dgvCategory.SelectedRows.Count > 0)
             {
                 var selectedRow = dgvCategory.SelectedRows[0];
                 if (selectedRow != null)
@@ -67,8 +115,8 @@ namespace GUI.Category
                         txtIDCategory.Text = selectedHang.MaHang.ToString();
                         txtNameCategory.Text = selectedHang.TenHang;
 
-                        currentMaHang = selectedHang.MaHang; 
-                        isEditing = true; 
+                        currentMaHang = selectedHang.MaHang;
+                        isEditing = true;
 
                         txtIDCategory.Enabled = false;
                     }
@@ -92,7 +140,7 @@ namespace GUI.Category
                     if (confirmResult == DialogResult.Yes)
                     {
                         bllCategory.DeleteHang(selectedHang.MaHang);
-                        LoadData(); 
+                        LoadData();
                     }
                 }
             }
@@ -110,49 +158,46 @@ namespace GUI.Category
             {
                 var updatedHang = new hang
                 {
-                    MaHang = currentMaHang, 
-                    TenHang = txtNameCategory.Text 
+                    MaHang = currentMaHang,
+                    TenHang = txtNameCategory.Text,
+                    Logo = uploadedImageUrl
                 };
 
-                bllCategory.UpdateHang(updatedHang); 
+                bllCategory.UpdateHang(updatedHang);
                 MessageBox.Show("Đã cập nhật hãng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 var newHang = new hang
                 {
-                    TenHang = txtNameCategory.Text
+                    TenHang = txtNameCategory.Text,
+                    Logo = uploadedImageUrl 
                 };
 
                 bllCategory.AddHang(newHang);
                 MessageBox.Show("Đã thêm hãng mới thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            LoadData(); 
+            LoadData();
             txtIDCategory.Text = "";
-            txtNameCategory.Text = ""; 
-            isEditing = false; 
+            txtNameCategory.Text = "";
+            isEditing = false;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            txtIDCategory.Text = ""; 
-            txtNameCategory.Text = ""; 
-            txtIDCategory.Enabled = false; 
-            isEditing = false; 
+            txtIDCategory.Text = "";
+            txtNameCategory.Text = "";
+            txtIDCategory.Enabled = false;
+            isEditing = false;
         }
 
         public void LoadData()
         {
             hangList = bllCategory.GetHangs();
             dgvCategory.DataSource = new BindingList<hang>(hangList);
-
             dgvCategory.Columns["TenHang"].HeaderText = "Tên Hãng";
             dgvCategory.Columns["MaHang"].HeaderText = "Mã Hãng";
-            if (dgvCategory.Columns.Contains("Logo"))
-            {
-                dgvCategory.Columns["Logo"].HeaderText = "Logo";
-            }
+            dgvCategory.Columns["Logo"].HeaderText = "Logo";
         }
 
     }
