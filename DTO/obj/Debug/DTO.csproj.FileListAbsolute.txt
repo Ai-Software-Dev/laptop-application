@@ -1,7 +1,0 @@
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\bin\Debug\DTO.dll
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\bin\Debug\DTO.pdb
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.dll
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\obj\Debug\DTO.pdb
-E:\O dia D\Nam4\PTPM-UDTM\DoAn\Application\ShopLaptop-Application\DTO\bin\Debug\DTO.dll.config
