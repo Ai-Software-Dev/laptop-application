@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Component/Component.csproj
+DTO/app.config
+DTO/laptop.dbml
+DTO/laptop.dbml.layout
+DTO/laptop.designer.cs
+DTO/Properties/Settings.Designer.cs
+DTO/Properties/Settings.settings
+GUI/GUI.csproj
