@@ -42,9 +42,13 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvCategory = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnUploadLogo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,7 +121,7 @@
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(85, 374);
+            this.panel1.Location = new System.Drawing.Point(80, 470);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(947, 79);
             this.panel1.TabIndex = 8;
@@ -126,7 +130,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::GUI.Properties.Resources.update;
+            this.btnSave.Image = global::GUI.Properties.Resources.save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(732, 17);
             this.btnSave.Name = "btnSave";
@@ -177,7 +181,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvCategory);
-            this.panel2.Location = new System.Drawing.Point(12, 459);
+            this.panel2.Location = new System.Drawing.Point(12, 575);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1122, 336);
             this.panel2.TabIndex = 9;
@@ -193,11 +197,44 @@
             this.dgvCategory.Size = new System.Drawing.Size(1116, 330);
             this.dgvCategory.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(193, 382);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 26);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Ảnh:";
+            // 
+            // picLogo
+            // 
+            this.picLogo.Location = new System.Drawing.Point(360, 352);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(155, 94);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 11;
+            this.picLogo.TabStop = false;
+            // 
+            // btnUploadLogo
+            // 
+            this.btnUploadLogo.BackColor = System.Drawing.Color.Silver;
+            this.btnUploadLogo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUploadLogo.Location = new System.Drawing.Point(567, 374);
+            this.btnUploadLogo.Name = "btnUploadLogo";
+            this.btnUploadLogo.Size = new System.Drawing.Size(153, 43);
+            this.btnUploadLogo.TabIndex = 12;
+            this.btnUploadLogo.Text = "Tải ảnh lên";
+            this.btnUploadLogo.UseVisualStyleBackColor = false;
+            // 
             // FrmCategory
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1145, 807);
+            this.ClientSize = new System.Drawing.Size(1145, 923);
+            this.Controls.Add(this.btnUploadLogo);
+            this.Controls.Add(this.picLogo);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtNameCategory);
@@ -213,6 +250,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +272,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvCategory;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Button btnUploadLogo;
     }
 }
