@@ -9,10 +9,37 @@ namespace BLL
 {
     public class BLL_Product
     {
-        DAL_Product _product = new DAL_Product();
-        public List<sanpham> GetSanphams()
+        DAL_Product dalProduct = new DAL_Product();
+        public BLL_Product()
         {
-            return _product.getSanPham();
-        } 
+
+        }
+        public List<sanpham> GetSanPham()
+        {
+            return dalProduct.GetSanPham();
+        }
+        public List<sanpham> SearchSanPhams(string searchKeyword)
+        {
+            return dalProduct.SearchSanPhams(searchKeyword);
+        }
+        public int GetLastIDSanPham()
+        {
+            return dalProduct.GetLastIDSanPham();
+        }
+
+        public bool AddSanPham(sanpham newSP)
+        {
+            return dalProduct.AddSanPham(newSP);
+        }
+
+        public bool UpdateSanPham(sanpham updatedSP)
+        {
+            return dalProduct.UpdateSanPham(updatedSP);
+        }
+
+        public void DeleteSanPham(int maSP)
+        {
+            dalProduct.DeleteSanPham(maSP);
+        }
     }
 }

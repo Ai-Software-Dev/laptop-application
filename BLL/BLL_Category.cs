@@ -7,11 +7,11 @@ namespace BLL
 {
     public class BLL_Category
     {
-        private DAL_Category dalCategory;
+        private DAL_Category dalCategory = new DAL_Category();
 
         public BLL_Category()
         {
-            dalCategory = new DAL_Category();
+
         }
 
         public List<hang> GetHangs()
@@ -22,14 +22,18 @@ namespace BLL
         {
             return dalCategory.SearchHangs(searchKeyword);
         }
-        public void AddHang(hang newHang)
+        public int GetLastIDHang()
         {
-            dalCategory.AddHang(newHang);
+            return dalCategory.GetLastIDHang();
+        }
+        public bool AddHang(hang newHang)
+        {
+            return dalCategory.AddHang(newHang);
         }
 
-        public void UpdateHang(hang updatedHang)
+        public bool UpdateHang(hang updatedHang)
         {
-            dalCategory.UpdateHang(updatedHang);
+            return dalCategory.UpdateHang(updatedHang);
         }
 
         public void DeleteHang(int maHang)

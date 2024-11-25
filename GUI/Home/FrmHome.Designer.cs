@@ -42,8 +42,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CenterPanel_Main = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -68,7 +66,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(202, 1102);
+            this.panel2.Size = new System.Drawing.Size(202, 802);
             this.panel2.TabIndex = 3;
             // 
             // btn_logout
@@ -81,11 +79,11 @@
             this.btn_logout.BorderSize = 1;
             this.btn_logout.FlatAppearance.BorderSize = 0;
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logout.ForeColor = System.Drawing.Color.Black;
             this.btn_logout.Image = global::GUI.Properties.Resources.logout24blue;
             this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.Location = new System.Drawing.Point(12, 1040);
+            this.btn_logout.Location = new System.Drawing.Point(12, 740);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_logout.Size = new System.Drawing.Size(173, 50);
@@ -108,10 +106,10 @@
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(53, 16);
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(53, 13);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(73, 25);
+            this.lbl_name.Size = new System.Drawing.Size(101, 32);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Admin";
             // 
@@ -128,7 +126,7 @@
             // btn_statistical
             // 
             this.btn_statistical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_statistical.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_statistical.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_statistical.Image = global::GUI.Properties.Resources.barchart24;
             this.btn_statistical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_statistical.Location = new System.Drawing.Point(2, 499);
@@ -142,7 +140,7 @@
             // btn_report
             // 
             this.btn_report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_report.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_report.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_report.Image = global::GUI.Properties.Resources.printer24;
             this.btn_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_report.Location = new System.Drawing.Point(2, 444);
@@ -156,7 +154,7 @@
             // btn_category
             // 
             this.btn_category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_category.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_category.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_category.Image = global::GUI.Properties.Resources.category24;
             this.btn_category.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_category.Location = new System.Drawing.Point(3, 281);
@@ -172,7 +170,7 @@
             // btn_home
             // 
             this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_home.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_home.Image = global::GUI.Properties.Resources.home24;
             this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_home.Location = new System.Drawing.Point(3, 226);
@@ -186,7 +184,7 @@
             // btn_customer
             // 
             this.btn_customer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_customer.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_customer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_customer.Image = global::GUI.Properties.Resources.person24;
             this.btn_customer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_customer.Location = new System.Drawing.Point(3, 391);
@@ -196,11 +194,12 @@
             this.btn_customer.TabIndex = 3;
             this.btn_customer.Text = "Khách hàng";
             this.btn_customer.UseVisualStyleBackColor = false;
+            this.btn_customer.Click += new System.EventHandler(this.btn_customer_Click);
             // 
             // btn_product
             // 
             this.btn_product.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_product.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_product.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_product.Image = global::GUI.Properties.Resources.package24;
             this.btn_product.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_product.Location = new System.Drawing.Point(3, 336);
@@ -225,54 +224,29 @@
             // 
             // CenterPanel_Main
             // 
-            this.CenterPanel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CenterPanel_Main.Location = new System.Drawing.Point(202, 0);
+            this.CenterPanel_Main.Location = new System.Drawing.Point(202, 53);
             this.CenterPanel_Main.Name = "CenterPanel_Main";
-            this.CenterPanel_Main.Size = new System.Drawing.Size(1198, 1102);
+            this.CenterPanel_Main.Size = new System.Drawing.Size(1257, 749);
             this.CenterPanel_Main.TabIndex = 4;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.btn_Exit);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(202, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1198, 56);
+            this.guna2Panel1.Size = new System.Drawing.Size(1260, 53);
             this.guna2Panel1.TabIndex = 1;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1017, 12);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 5;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1077, 12);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 4;
             // 
             // btn_Exit
             // 
             this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btn_Exit.IconColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(1141, 12);
+            this.btn_Exit.Location = new System.Drawing.Point(1203, 12);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(45, 29);
             this.btn_Exit.TabIndex = 3;
@@ -284,7 +258,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(174, 0);
+            this.label2.Location = new System.Drawing.Point(281, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(837, 50);
             this.label2.TabIndex = 2;
@@ -292,16 +266,17 @@
             // 
             // FrmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1400, 1102);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1462, 802);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.CenterPanel_Main);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "FrmHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -330,7 +305,5 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }
