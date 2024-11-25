@@ -3,6 +3,7 @@ using DTO;
 using GUI.Category;
 using GUI.Login;
 using GUI.Product;
+using GUI.Customer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,12 +40,12 @@ namespace GUI.Home
 
         private void btn_category_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmCategory());
+            AddControls(new FrmCategories());
         }
 
         private void btn_product_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmProduct());
+            AddControls(new FrmProducts());
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -62,6 +63,11 @@ namespace GUI.Home
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_customer_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmCustomers());
         }
     }
 }
