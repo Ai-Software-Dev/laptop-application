@@ -23,7 +23,7 @@ namespace DAL
         public List<hoadon> SearchHoaDons(string searchKeyword)
         {
             return db.hoadons
-                    .Where(h => h.MaHoaDon != null && h.MaHoaDon.ToString().ToLower().Contains(searchKeyword.ToLower()))
+                    .Where(h => h.MaHoaDon.ToString().ToLower().Contains(searchKeyword.ToLower()))
                     .ToList();
         }
         public HoaDonChiTiet GetHoaDonByID (int mahd)

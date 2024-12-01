@@ -153,6 +153,7 @@
             this.btn_statistical.TabIndex = 7;
             this.btn_statistical.Text = "Thông kê";
             this.btn_statistical.UseVisualStyleBackColor = false;
+            this.btn_statistical.Click += new System.EventHandler(this.btn_statistical_Click);
             // 
             // btn_report
             // 

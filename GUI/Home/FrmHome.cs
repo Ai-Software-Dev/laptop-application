@@ -5,6 +5,7 @@ using GUI.Login;
 using GUI.Product;
 using GUI.Customer;
 using GUI.Order;
+using GUI.Statistics;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,6 +75,11 @@ namespace GUI.Home
         private void btn_order_Click(object sender, EventArgs e)
         {
             AddControls(new FrmOrders());
+        }
+
+        private void btn_statistical_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmStatistics());
         }
     }
 }
