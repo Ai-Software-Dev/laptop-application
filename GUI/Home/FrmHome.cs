@@ -57,7 +57,7 @@ namespace GUI.Home
             {
                 this.Close();
                 FrmLogin frm = new FrmLogin();
-                frm.Show();
+                frm.ShowDialog();
             }
         }
 

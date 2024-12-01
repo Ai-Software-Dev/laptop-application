@@ -32,7 +32,7 @@ namespace GUI.Login
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(r == DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }    
         }
 
