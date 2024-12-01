@@ -152,6 +152,18 @@
     <Compile Include="Login\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order\FrmOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\FrmOrderDetail.Designer.cs">
+      <DependentUpon>FrmOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FrmOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\FrmOrders.Designer.cs">
+      <DependentUpon>FrmOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product\FrmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\FrmOrderDetail.resx">
+      <DependentUpon>FrmOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\FrmOrders.resx">
+      <DependentUpon>FrmOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product\FrmProducts.resx">
       <DependentUpon>FrmProducts.cs</DependentUpon>
@@ -219,12 +237,15 @@
     <Content Include="Resources\barchart24.png" />
     <Content Include="Resources\category24.png" />
     <Content Include="Resources\delete.png" />
+    <Content Include="Resources\details.png" />
     <Content Include="Resources\exit.png" />
+    <Content Include="Resources\eye.png" />
     <Content Include="Resources\home24.png" />
     <Content Include="Resources\login1.jpg" />
     <Content Include="Resources\logout24blue.png" />
     <Content Include="Resources\logo_shopbvt.png" />
     <Content Include="Resources\loupe.png" />
+    <Content Include="Resources\order.png" />
     <Content Include="Resources\package24.png" />
     <Content Include="Resources\padlock.png" />
     <Content Include="Resources\add.png" />

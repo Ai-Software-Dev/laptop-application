@@ -147,17 +147,19 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(88, 199);
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(88, 191);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(367, 22);
+            this.txtPass.Size = new System.Drawing.Size(367, 28);
             this.txtPass.TabIndex = 4;
             // 
             // txtTenDN
             // 
-            this.txtTenDN.Location = new System.Drawing.Point(88, 109);
+            this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDN.Location = new System.Drawing.Point(88, 101);
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(367, 22);
+            this.txtTenDN.Size = new System.Drawing.Size(367, 28);
             this.txtTenDN.TabIndex = 3;
             // 
             // label3

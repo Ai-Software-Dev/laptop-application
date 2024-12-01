@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_order = new System.Windows.Forms.Button();
             this.btn_logout = new Component.CustomButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.btn_order);
             this.panel2.Controls.Add(this.btn_logout);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_statistical);
@@ -68,6 +70,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 802);
             this.panel2.TabIndex = 3;
+            // 
+            // btn_order
+            // 
+            this.btn_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_order.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_order.Image = global::GUI.Properties.Resources.order;
+            this.btn_order.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_order.Location = new System.Drawing.Point(3, 446);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btn_order.Size = new System.Drawing.Size(199, 49);
+            this.btn_order.TabIndex = 10;
+            this.btn_order.Text = "Đơn hàng";
+            this.btn_order.UseVisualStyleBackColor = false;
+            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
             // btn_logout
             // 
@@ -129,7 +146,7 @@
             this.btn_statistical.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_statistical.Image = global::GUI.Properties.Resources.barchart24;
             this.btn_statistical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_statistical.Location = new System.Drawing.Point(2, 499);
+            this.btn_statistical.Location = new System.Drawing.Point(3, 556);
             this.btn_statistical.Name = "btn_statistical";
             this.btn_statistical.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btn_statistical.Size = new System.Drawing.Size(200, 50);
@@ -143,7 +160,7 @@
             this.btn_report.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_report.Image = global::GUI.Properties.Resources.printer24;
             this.btn_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_report.Location = new System.Drawing.Point(2, 444);
+            this.btn_report.Location = new System.Drawing.Point(3, 501);
             this.btn_report.Name = "btn_report";
             this.btn_report.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btn_report.Size = new System.Drawing.Size(199, 49);
@@ -305,5 +322,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit;
+        private System.Windows.Forms.Button btn_order;
     }
 }
