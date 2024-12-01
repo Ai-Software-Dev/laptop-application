@@ -53,6 +53,7 @@
     <Compile Include="DAL_Login.cs" />
     <Compile Include="DAL_Order.cs" />
     <Compile Include="DAL_Product.cs" />
+    <Compile Include="DAL_Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
