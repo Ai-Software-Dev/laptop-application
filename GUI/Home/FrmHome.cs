@@ -4,6 +4,8 @@ using GUI.Category;
 using GUI.Login;
 using GUI.Product;
 using GUI.Customer;
+using GUI.Order;
+using GUI.Statistics;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.Prediction;
 namespace GUI.Home
 {
     public partial class FrmHome : Form
@@ -21,6 +24,12 @@ namespace GUI.Home
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            btn_predict.Click += Btn_predict_Click;
+        }
+
+        private void Btn_predict_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPredictionAddProduct());
         }
 
         static FrmHome _obj;
@@ -56,7 +65,7 @@ namespace GUI.Home
             {
                 this.Close();
                 FrmLogin frm = new FrmLogin();
-                frm.Show();
+                frm.ShowDialog();
             }
         }
 
@@ -68,6 +77,16 @@ namespace GUI.Home
         private void btn_customer_Click(object sender, EventArgs e)
         {
             AddControls(new FrmCustomers());
+        }
+
+        private void btn_order_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmOrders());
+        }
+
+        private void btn_statistical_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmStatistics());
         }
     }
 }

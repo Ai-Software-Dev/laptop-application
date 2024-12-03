@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{07463B72-9861-4F4B-8347-1DE45D3ABEEE}</ProjectGuid>
+    <ProjectGuid>{9E80CAF7-8F79-473E-9589-DC810C3E4961}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLL</RootNamespace>
-    <AssemblyName>BLL</AssemblyName>
+    <RootNamespace>PML</RootNamespace>
+    <AssemblyName>PML</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -48,17 +48,11 @@
     <Reference Include="Accord.Statistics, Version=3.6.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
       <HintPath>..\packages\Accord.Statistics.3.6.0\lib\net462\Accord.Statistics.dll</HintPath>
     </Reference>
-    <Reference Include="DAL">
-      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
-    </Reference>
     <Reference Include="DTO">
       <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,13 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL_Category.cs" />
-    <Compile Include="BLL_Customer.cs" />
-    <Compile Include="BLL_Login.cs" />
-    <Compile Include="BLL_Order.cs" />
-    <Compile Include="BLL_Product.cs" />
-    <Compile Include="BLL_Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XuLyThuatToanPML.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
