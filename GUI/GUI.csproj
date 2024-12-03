@@ -93,6 +93,9 @@
     <Reference Include="itext.svg, Version=9.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itext.9.0.0\lib\net461\itext.svg.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -264,6 +267,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\FrmCateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmCateReport.Designer.cs">
+      <DependentUpon>FrmCateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmProductReport.Designer.cs">
+      <DependentUpon>FrmProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRevenue.Designer.cs">
+      <DependentUpon>FrmRevenue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Statistics\FrmStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +331,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmCateReport.resx">
+      <DependentUpon>FrmCateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmProductReport.resx">
+      <DependentUpon>FrmProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRevenue.resx">
+      <DependentUpon>FrmRevenue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Statistics\FrmStatistics.resx">
       <DependentUpon>FrmStatistics.cs</DependentUpon>
@@ -349,6 +388,9 @@
     <Content Include="Resources\save.png" />
     <Content Include="Resources\update.png" />
     <Content Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Template\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

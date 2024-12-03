@@ -76,7 +76,7 @@ namespace GUI.Product
             this.label3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(14, 464);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 23);
+            this.label3.Size = new System.Drawing.Size(89, 22);
             this.label3.TabIndex = 90;
             this.label3.Text = "Hình Ảnh:";
             // 
@@ -106,7 +106,7 @@ namespace GUI.Product
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 23);
+            this.label1.Size = new System.Drawing.Size(124, 22);
             this.label1.TabIndex = 93;
             this.label1.Text = "Mã Sản Phẩm:";
             // 
@@ -163,7 +163,7 @@ namespace GUI.Product
             this.btn_huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_huy.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_huy.ForeColor = System.Drawing.Color.White;
-            this.btn_huy.Location = new System.Drawing.Point(1105, 810);
+            this.btn_huy.Location = new System.Drawing.Point(1093, 737);
             this.btn_huy.Name = "btn_huy";
             this.btn_huy.Size = new System.Drawing.Size(82, 41);
             this.btn_huy.TabIndex = 87;
@@ -178,7 +178,7 @@ namespace GUI.Product
             this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sua.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sua.ForeColor = System.Drawing.Color.White;
-            this.btn_sua.Location = new System.Drawing.Point(960, 810);
+            this.btn_sua.Location = new System.Drawing.Point(948, 737);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(82, 41);
             this.btn_sua.TabIndex = 86;
@@ -193,7 +193,7 @@ namespace GUI.Product
             this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_them.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them.ForeColor = System.Drawing.Color.White;
-            this.btn_them.Location = new System.Drawing.Point(819, 810);
+            this.btn_them.Location = new System.Drawing.Point(807, 737);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(82, 41);
             this.btn_them.TabIndex = 85;
@@ -206,7 +206,7 @@ namespace GUI.Product
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 23);
+            this.label2.Size = new System.Drawing.Size(131, 22);
             this.label2.TabIndex = 83;
             this.label2.Text = "Tên Sản Phẩm:";
             // 
@@ -225,7 +225,7 @@ namespace GUI.Product
             this.label4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(14, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 23);
+            this.label4.Size = new System.Drawing.Size(66, 22);
             this.label4.TabIndex = 95;
             this.label4.Text = "Mô Tả:";
             // 
@@ -244,7 +244,7 @@ namespace GUI.Product
             this.label5.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(14, 301);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 23);
+            this.label5.Size = new System.Drawing.Size(77, 22);
             this.label5.TabIndex = 97;
             this.label5.Text = "Giá Bán:";
             // 
@@ -263,7 +263,7 @@ namespace GUI.Product
             this.label6.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(13, 351);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 23);
+            this.label6.Size = new System.Drawing.Size(49, 22);
             this.label6.TabIndex = 99;
             this.label6.Text = "CPU:";
             // 
@@ -282,7 +282,7 @@ namespace GUI.Product
             this.label7.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 404);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 23);
+            this.label7.Size = new System.Drawing.Size(51, 22);
             this.label7.TabIndex = 101;
             this.label7.Text = "Ram:";
             // 
@@ -301,7 +301,7 @@ namespace GUI.Product
             this.label8.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(611, 92);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 23);
+            this.label8.Size = new System.Drawing.Size(77, 22);
             this.label8.TabIndex = 103;
             this.label8.Text = "Ổ Cứng:";
             // 
@@ -320,7 +320,7 @@ namespace GUI.Product
             this.label9.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(609, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 23);
+            this.label9.Size = new System.Drawing.Size(91, 22);
             this.label9.TabIndex = 105;
             this.label9.Text = "Màn Hình:";
             // 
@@ -339,7 +339,7 @@ namespace GUI.Product
             this.label10.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(611, 194);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 23);
+            this.label10.Size = new System.Drawing.Size(50, 22);
             this.label10.TabIndex = 107;
             this.label10.Text = "VGA:";
             // 
@@ -358,7 +358,7 @@ namespace GUI.Product
             this.label11.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(611, 246);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(128, 23);
+            this.label11.Size = new System.Drawing.Size(120, 22);
             this.label11.TabIndex = 109;
             this.label11.Text = "Hệ Điều Hành";
             // 
@@ -377,7 +377,7 @@ namespace GUI.Product
             this.label12.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(609, 301);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 23);
+            this.label12.Size = new System.Drawing.Size(119, 22);
             this.label12.TabIndex = 111;
             this.label12.Text = "Trọng Lượng:";
             // 
@@ -396,7 +396,7 @@ namespace GUI.Product
             this.label13.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(611, 351);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 23);
+            this.label13.Size = new System.Drawing.Size(34, 22);
             this.label13.TabIndex = 113;
             this.label13.Text = "Pin";
             // 
@@ -415,7 +415,7 @@ namespace GUI.Product
             this.label14.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(611, 404);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 23);
+            this.label14.Size = new System.Drawing.Size(92, 22);
             this.label14.TabIndex = 115;
             this.label14.Text = "Số Lượng:";
             // 
@@ -444,7 +444,7 @@ namespace GUI.Product
             this.label15.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(13, 194);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 23);
+            this.label15.Size = new System.Drawing.Size(51, 22);
             this.label15.TabIndex = 118;
             this.label15.Text = "Hãng";
             // 

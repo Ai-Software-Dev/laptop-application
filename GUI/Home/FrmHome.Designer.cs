@@ -126,7 +126,7 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(53, 13);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(101, 32);
+            this.lbl_name.Size = new System.Drawing.Size(100, 32);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Admin";
             // 
@@ -168,6 +168,7 @@
             this.btn_report.TabIndex = 6;
             this.btn_report.Text = "Báo cáo";
             this.btn_report.UseVisualStyleBackColor = false;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // btn_category
             // 

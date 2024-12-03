@@ -57,6 +57,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="RevenueByMonth.cs" />
+    <Compile Include="RevenueReport.cs" />
     <Compile Include="TopCustomer.cs" />
   </ItemGroup>
   <ItemGroup>

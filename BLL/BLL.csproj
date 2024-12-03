@@ -55,6 +55,7 @@
     <Compile Include="BLL_Login.cs" />
     <Compile Include="BLL_Order.cs" />
     <Compile Include="BLL_Product.cs" />
+    <Compile Include="BLL_Revenue.cs" />
     <Compile Include="BLL_Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

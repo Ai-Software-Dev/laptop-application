@@ -15,6 +15,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.Report;
+
 namespace GUI.Home
 {
     public partial class FrmHome : Form
@@ -80,6 +82,11 @@ namespace GUI.Home
         private void btn_statistical_Click(object sender, EventArgs e)
         {
             AddControls(new FrmStatistics());
+        }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmReport());
         }
     }
 }
