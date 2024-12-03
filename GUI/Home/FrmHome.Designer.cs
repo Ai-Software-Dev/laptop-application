@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_predict = new System.Windows.Forms.Button();
             this.btn_order = new System.Windows.Forms.Button();
             this.btn_logout = new Component.CustomButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,7 +46,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_predict = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -72,6 +72,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 802);
             this.panel2.TabIndex = 3;
+            // 
+            // btn_predict
+            // 
+            this.btn_predict.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_predict.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_predict.Image = global::GUI.Properties.Resources.barchart24;
+            this.btn_predict.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_predict.Location = new System.Drawing.Point(2, 612);
+            this.btn_predict.Name = "btn_predict";
+            this.btn_predict.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btn_predict.Size = new System.Drawing.Size(200, 50);
+            this.btn_predict.TabIndex = 11;
+            this.btn_predict.Text = "Dự đoán";
+            this.btn_predict.UseVisualStyleBackColor = false;
             // 
             // btn_order
             // 
@@ -128,7 +142,7 @@
             this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.Location = new System.Drawing.Point(53, 13);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(100, 32);
+            this.lbl_name.Size = new System.Drawing.Size(101, 32);
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Admin";
             // 
@@ -170,6 +184,7 @@
             this.btn_report.TabIndex = 6;
             this.btn_report.Text = "Báo cáo";
             this.btn_report.UseVisualStyleBackColor = false;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // btn_category
             // 
@@ -283,20 +298,6 @@
             this.label2.Size = new System.Drawing.Size(837, 50);
             this.label2.TabIndex = 2;
             this.label2.Text = "QUẢN LÝ CỬA HÀNG KINH DOANH LAPTOP";
-            // 
-            // btn_predict
-            // 
-            this.btn_predict.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_predict.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_predict.Image = global::GUI.Properties.Resources.barchart24;
-            this.btn_predict.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_predict.Location = new System.Drawing.Point(2, 612);
-            this.btn_predict.Name = "btn_predict";
-            this.btn_predict.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btn_predict.Size = new System.Drawing.Size(200, 50);
-            this.btn_predict.TabIndex = 11;
-            this.btn_predict.Text = "Dự đoán";
-            this.btn_predict.UseVisualStyleBackColor = false;
             // 
             // FrmHome
             // 

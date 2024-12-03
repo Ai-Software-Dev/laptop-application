@@ -88,7 +88,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(132, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 32);
+            this.label1.Size = new System.Drawing.Size(267, 32);
             this.label1.TabIndex = 107;
             this.label1.Text = "DANH SÁCH HÃNG";
             // 
@@ -103,6 +103,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCateReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCateReport";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Categories)).EndInit();
