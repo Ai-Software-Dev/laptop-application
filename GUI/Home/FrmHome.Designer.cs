@@ -325,5 +325,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit;
         private System.Windows.Forms.Button btn_order;
+        private System.Windows.Forms.Button btn_predict;
     }
 }
