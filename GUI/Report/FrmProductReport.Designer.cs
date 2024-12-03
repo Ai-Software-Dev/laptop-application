@@ -63,7 +63,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(499, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 32);
+            this.label1.Size = new System.Drawing.Size(332, 32);
             this.label1.TabIndex = 108;
             this.label1.Text = "DANH SÁCH SẢN PHẨM";
             // 
@@ -92,7 +92,7 @@
             this.btn_pdf.Text = "Xuất file PDF";
             this.btn_pdf.UseVisualStyleBackColor = false;
             // 
-            // FrmProduct
+            // FrmProductReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +102,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmProduct";
+            this.Name = "FrmProductReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProduct";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Product)).EndInit();
