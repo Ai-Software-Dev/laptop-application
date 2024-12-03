@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_AI.cs" />
     <Compile Include="DAL_Category.cs" />
     <Compile Include="DAL_Customer.cs" />
     <Compile Include="DAL_Login.cs" />

@@ -16,6 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GUI.Report;
+using GUI.Prediction;
 
 namespace GUI.Home
 {
@@ -25,6 +26,12 @@ namespace GUI.Home
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            btn_predict.Click += Btn_predict_Click;
+        }
+
+        private void Btn_predict_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPredictionAddProduct());
         }
 
         static FrmHome _obj;

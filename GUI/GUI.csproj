@@ -48,6 +48,10 @@
     <Reference Include="Component">
       <HintPath>..\Component\bin\Debug\Component.dll</HintPath>
     </Reference>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="DTO">
       <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
     </Reference>
@@ -93,9 +97,6 @@
     <Reference Include="itext.svg, Version=9.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itext.9.0.0\lib\net461\itext.svg.dll</HintPath>
     </Reference>
-    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
-      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -119,6 +120,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PML">
+      <HintPath>..\PML\bin\Debug\PML.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -253,6 +257,12 @@
     <Compile Include="Order\FrmOrders.Designer.cs">
       <DependentUpon>FrmOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prediction\frmPredictionAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prediction\frmPredictionAddProduct.Designer.cs">
+      <DependentUpon>frmPredictionAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product\FrmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,10 +277,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\FrmCateReport.cs">
+    <Compile Include="Statistics\FrmStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report\FrmCateReport.Designer.cs">
+        <Compile Include="Report\FrmCateReport.Designer.cs">
       <DependentUpon>FrmCateReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\FrmProductReport.cs">
@@ -290,9 +300,6 @@
     </Compile>
     <Compile Include="Report\FrmRevenue.Designer.cs">
       <DependentUpon>FrmRevenue.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Statistics\FrmStatistics.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Statistics\FrmStatistics.Designer.cs">
       <DependentUpon>FrmStatistics.cs</DependentUpon>
@@ -321,6 +328,9 @@
     <EmbeddedResource Include="Order\FrmOrders.resx">
       <DependentUpon>FrmOrders.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prediction\frmPredictionAddProduct.resx">
+      <DependentUpon>frmPredictionAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Product\FrmProducts.resx">
       <DependentUpon>FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,7 +342,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\FrmCateReport.resx">
+        <EmbeddedResource Include="Report\FrmCateReport.resx">
       <DependentUpon>FrmCateReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmProductReport.resx">
@@ -388,9 +398,6 @@
     <Content Include="Resources\save.png" />
     <Content Include="Resources\update.png" />
     <Content Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Template\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
