@@ -62,16 +62,6 @@
     <td>Xây dựng layout chung</td>
     <td>Nguyễn Xuân Bính</td>
   </tr>
-  <tr>
-    <td>2</td>
-    <td>Xây dựng layout chung</td>
-    <td>Nguyễn Xuân Bính</td>
-  </tr>
-   <tr>
-    <td>3</td>
-    <td>Xây dựng layout chung</td>
-    <td>Nguyễn Xuân Bính</td>
-  </tr>
    <tr>
     <td>4</td>
     <td>CRUD Danh mục và sản phẩm</td>
