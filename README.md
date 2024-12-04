@@ -40,16 +40,20 @@
   </ul>
 </nav>
 
+# Mô hình hoạt động của hệ thống
+<img src="https://res.cloudinary.com/dypftrmtl/image/upload/v1733327404/mohinhhoatdong_pr1rwx.jpg" alt="Mô hình hoạt động"/>
+
+
 # Chi Tiết
 ## Hệ thống quản lý cửa hàng laptop
 <h4>Mô tả dự án: </h4>
 <p>Hệ thống Quản lý Cửa hàng Laptop là một ứng dụng Windows Forms phát triển bằng ngôn ngữ lập trình C#. Mục tiêu chính của dự án là xây dựng một phần mềm quản lý toàn diện cho các cửa hàng bán laptop, giúp tối ưu hóa quy trình kinh doanh và nâng cao hiệu quả quản lý.</p>
 
-# Nghiệp vụ
+# Chức năng
 <table>
   <tr>
     <th>STT</th>
-    <th>Nghiệp Vụ</th>
+    <th>Chức năng</th>
     <Th>Thực hiện</Th>
   </tr>
   <tr>
@@ -94,7 +98,7 @@
     </tr>
 </table>
 
-# Chức năng 
+# Mô tả chức năng 
 <h4>Chức năng quản lý danh mục</h4>
 <ul>
    <li>Thêm, sửa, xóa, tìm kiếm và xem danh sách hãng của laptop</li>
