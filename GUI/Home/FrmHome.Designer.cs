@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_predict = new System.Windows.Forms.Button();
             this.btn_order = new System.Windows.Forms.Button();
             this.btn_logout = new Component.CustomButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -55,6 +56,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.btn_predict);
             this.panel2.Controls.Add(this.btn_order);
             this.panel2.Controls.Add(this.btn_logout);
             this.panel2.Controls.Add(this.panel3);
@@ -70,6 +72,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 802);
             this.panel2.TabIndex = 3;
+            // 
+            // btn_predict
+            // 
+            this.btn_predict.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_predict.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_predict.Image = global::GUI.Properties.Resources.barchart24;
+            this.btn_predict.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_predict.Location = new System.Drawing.Point(2, 612);
+            this.btn_predict.Name = "btn_predict";
+            this.btn_predict.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btn_predict.Size = new System.Drawing.Size(200, 50);
+            this.btn_predict.TabIndex = 11;
+            this.btn_predict.Text = "Dự đoán";
+            this.btn_predict.UseVisualStyleBackColor = false;
             // 
             // btn_order
             // 
@@ -168,6 +184,7 @@
             this.btn_report.TabIndex = 6;
             this.btn_report.Text = "Báo cáo";
             this.btn_report.UseVisualStyleBackColor = false;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // btn_category
             // 
@@ -324,5 +341,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit;
         private System.Windows.Forms.Button btn_order;
+        private System.Windows.Forms.Button btn_predict;
     }
 }

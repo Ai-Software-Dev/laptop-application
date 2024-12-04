@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_AI.cs" />
     <Compile Include="DAL_Category.cs" />
     <Compile Include="DAL_Customer.cs" />
     <Compile Include="DAL_Login.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="DAL_Product.cs" />
     <Compile Include="DAL_Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAL_Revenue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
