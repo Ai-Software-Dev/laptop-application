@@ -40,20 +40,16 @@ namespace GUI.Customer
             this.txt_IDUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grpBox_TK = new System.Windows.Forms.GroupBox();
-            this.txt_NameLogin = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_Pass = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_NameLogin = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Customers)).BeginInit();
             this.grpBox_TK.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +60,7 @@ namespace GUI.Customer
             this.label7.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 284);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(204, 23);
+            this.label7.Size = new System.Drawing.Size(189, 22);
             this.label7.TabIndex = 12;
             this.label7.Text = "Danh sách khách hàng";
             // 
@@ -89,9 +85,7 @@ namespace GUI.Customer
             this.Column1,
             this.Column2,
             this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Edit});
+            this.Column7});
             this.dgv_Customers.EnableHeadersVisualStyles = false;
             this.dgv_Customers.Location = new System.Drawing.Point(12, 309);
             this.dgv_Customers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -110,7 +104,7 @@ namespace GUI.Customer
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(19, 94);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 23);
+            this.label8.Size = new System.Drawing.Size(85, 22);
             this.label8.TabIndex = 14;
             this.label8.Text = "Tìm Kiếm";
             // 
@@ -138,7 +132,7 @@ namespace GUI.Customer
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(185, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 23);
+            this.label2.Size = new System.Drawing.Size(141, 22);
             this.label2.TabIndex = 30;
             this.label2.Text = "Tên Khách Hàng";
             // 
@@ -158,7 +152,7 @@ namespace GUI.Customer
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 23);
+            this.label1.Size = new System.Drawing.Size(134, 22);
             this.label1.TabIndex = 28;
             this.label1.Text = "Mã Khách Hàng";
             // 
@@ -166,8 +160,6 @@ namespace GUI.Customer
             // 
             this.grpBox_TK.Controls.Add(this.txt_Email);
             this.grpBox_TK.Controls.Add(this.label5);
-            this.grpBox_TK.Controls.Add(this.txt_Pass);
-            this.grpBox_TK.Controls.Add(this.label4);
             this.grpBox_TK.Controls.Add(this.txt_NameLogin);
             this.grpBox_TK.Controls.Add(this.label3);
             this.grpBox_TK.Controls.Add(this.label8);
@@ -183,6 +175,26 @@ namespace GUI.Customer
             this.grpBox_TK.TabIndex = 10;
             this.grpBox_TK.TabStop = false;
             this.grpBox_TK.Text = "Quản lý khách hàng";
+            // 
+            // txt_Email
+            // 
+            this.txt_Email.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txt_Email.Location = new System.Drawing.Point(626, 50);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.ReadOnly = true;
+            this.txt_Email.Size = new System.Drawing.Size(169, 29);
+            this.txt_Email.TabIndex = 38;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(622, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 22);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Email";
             // 
             // txt_NameLogin
             // 
@@ -200,49 +212,9 @@ namespace GUI.Customer
             this.label3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(391, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 23);
+            this.label3.Size = new System.Drawing.Size(126, 22);
             this.label3.TabIndex = 33;
             this.label3.Text = "Tên Tài Khoản";
-            // 
-            // txt_Pass
-            // 
-            this.txt_Pass.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txt_Pass.Location = new System.Drawing.Point(602, 50);
-            this.txt_Pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_Pass.Name = "txt_Pass";
-            this.txt_Pass.ReadOnly = true;
-            this.txt_Pass.Size = new System.Drawing.Size(169, 29);
-            this.txt_Pass.TabIndex = 36;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(598, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 23);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "Mật Khẩu";
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txt_Email.Location = new System.Drawing.Point(813, 50);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.ReadOnly = true;
-            this.txt_Email.Size = new System.Drawing.Size(169, 29);
-            this.txt_Email.TabIndex = 38;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(809, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 23);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Email";
             // 
             // dataGridViewImageColumn1
             // 
@@ -286,14 +258,6 @@ namespace GUI.Customer
             this.Column5.ReadOnly = true;
             this.Column5.Width = 125;
             // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Mật Khẩu";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 125;
-            // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -301,15 +265,6 @@ namespace GUI.Customer
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
-            // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "";
-            this.Edit.Image = global::GUI.Properties.Resources.update;
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Width = 60;
             // 
             // FrmCustomers
             // 
@@ -344,15 +299,11 @@ namespace GUI.Customer
         public System.Windows.Forms.GroupBox grpBox_TK;
         public System.Windows.Forms.TextBox txt_Email;
         public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txt_Pass;
-        public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txt_NameLogin;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
     }
 }

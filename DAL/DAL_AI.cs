@@ -28,13 +28,13 @@ namespace DAL
                g.Key.SoLuong <= 5
            ));
 
-                if (!string.IsNullOrEmpty(searchKeyword))
-                {
-                    query = query.Where(x => x.ProductName.ToLower().Contains(searchKeyword.ToLower()) ||
-                                              x.ProductId.ToString().ToLower().Contains(searchKeyword.ToLower()));
-                }
+            if (!string.IsNullOrEmpty(searchKeyword))
+            {
+                query = query.Where(x => x.ProductName.ToLower().Contains(searchKeyword.ToLower()) ||
+                                          x.ProductId.ToString().ToLower().Contains(searchKeyword.ToLower()));
+            }
 
-                return query.ToList();
+            return query.ToList();
         }
     }
 }
