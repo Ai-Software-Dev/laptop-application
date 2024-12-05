@@ -16,7 +16,6 @@ namespace DAL
         }
         public List<user> GetCustomers()
         {
-            db = new laptopDataContext();
             return db.users.ToList();
         }
         public List<user> SearchCustomers(string searchKeyword)

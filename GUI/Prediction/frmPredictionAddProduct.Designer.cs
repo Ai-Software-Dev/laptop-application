@@ -37,6 +37,10 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtStockLevel = new System.Windows.Forms.TextBox();
             this.txtProductId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dataTrain)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +48,7 @@
             // 
             this.dgv_dataTrain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_dataTrain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_dataTrain.Location = new System.Drawing.Point(141, 215);
+            this.dgv_dataTrain.Location = new System.Drawing.Point(141, 294);
             this.dgv_dataTrain.Name = "dgv_dataTrain";
             this.dgv_dataTrain.RowHeadersWidth = 51;
             this.dgv_dataTrain.RowTemplate.Height = 24;
@@ -110,11 +114,51 @@
             this.txtProductId.Size = new System.Drawing.Size(243, 27);
             this.txtProductId.TabIndex = 8;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(167, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Mã sản phẩm";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(641, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Số lượng đã bán";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1069, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Giá bán";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1069, 129);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Số lượng tồn";
+            // 
             // frmPredictionAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1406, 636);
+            this.ClientSize = new System.Drawing.Size(1406, 704);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtProductId);
             this.Controls.Add(this.txtStockLevel);
             this.Controls.Add(this.txtPrice);
@@ -143,5 +187,9 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtStockLevel;
         private System.Windows.Forms.TextBox txtProductId;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

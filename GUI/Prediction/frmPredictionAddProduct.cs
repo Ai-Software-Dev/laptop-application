@@ -53,37 +53,58 @@ namespace GUI.Prediction
 
         private void Btn_predict_Click(object sender, EventArgs e)
         {
+            // Kiểm tra dữ liệu nhập
             if (string.IsNullOrWhiteSpace(txtProductId.Text) ||
-        string.IsNullOrWhiteSpace(txtProductName.Text) ||
-        string.IsNullOrWhiteSpace(txtQuantitySold.Text) ||
-        string.IsNullOrWhiteSpace(txtStockLevel.Text) ||
-        string.IsNullOrWhiteSpace(txtPrice.Text))
+                string.IsNullOrWhiteSpace(txtProductName.Text) ||
+                string.IsNullOrWhiteSpace(txtQuantitySold.Text) ||
+                string.IsNullOrWhiteSpace(txtStockLevel.Text) ||
+                string.IsNullOrWhiteSpace(txtPrice.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin sản phẩm.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;  // Dừng hàm nếu có trường dữ liệu chưa được nhập
+                return;
             }
 
-            // Lấy dữ liệu từ các TextBox
-            int productId = int.TryParse(txtProductId.Text, out var id) ? id : 0;
-            var productName = txtProductName.Text;
-            var quantitySold = int.TryParse(txtQuantitySold.Text, out var qtySold) ? qtySold : 0;
-            var stockLevel = int.TryParse(txtStockLevel.Text, out var stock) ? stock : 0;
-            var price = double.TryParse(txtPrice.Text, out var prc) ? prc : 0.0;
+            // Kiểm tra tính hợp lệ của các giá trị số
+            if (!int.TryParse(txtQuantitySold.Text, out var quantitySold) || quantitySold < 0)
+            {
+                MessageBox.Show("Số lượng đã bán phải là giá trị hợp lệ và không âm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            if (!int.TryParse(txtStockLevel.Text, out var stockLevel) || stockLevel < 0)
+            {
+                MessageBox.Show("Mức tồn kho phải là giá trị hợp lệ và không âm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!double.TryParse(txtPrice.Text, out var price) || price <= 0)
+            {
+                MessageBox.Show("Giá sản phẩm phải là giá trị hợp lệ và lớn hơn 0.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Tạo đối tượng InventoryData
             InventoryData newProduct = new InventoryData(
-                productId,
-                productName,
+                int.Parse(txtProductId.Text),
+                txtProductName.Text,
                 quantitySold,
                 stockLevel,
                 price,
                 false
             );
 
-            bool needRestock = xlttPML.Predict(newProduct) == 1;
+            try
+            {
+                // Dự đoán sản phẩm có cần nhập thêm kho hay không
+                bool needRestock = xlttPML.Predict(newProduct) == 1;
+                newProduct.NeedRestock = needRestock;
 
-            newProduct.NeedRestock = needRestock;
-
-            lbl_predict.Text = needRestock ? "Cần bổ sung kho hàng" : "Không cần bổ sung kho hàng";
+                lbl_predict.Text = needRestock ? "Cần bổ sung kho hàng" : "Không cần bổ sung kho hàng";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra khi dự đoán: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void loadDataTrain()
@@ -104,16 +125,20 @@ namespace GUI.Prediction
         {
             DataTable table = new DataTable();
 
-            table.Columns.Add("ProductId", typeof(int));
-            table.Columns.Add("ProductName", typeof(string));
-            table.Columns.Add("QuantitySold", typeof(int));
-            table.Columns.Add("StockLevel", typeof(int));
-            table.Columns.Add("Price", typeof(double));
-            table.Columns.Add("NeedRestock", typeof(bool));
+            var properties = typeof(InventoryData).GetProperties();
+            foreach (var prop in properties)
+            {
+                table.Columns.Add(prop.Name, prop.PropertyType);
+            }
 
             foreach (var item in inventoryData)
             {
-                table.Rows.Add(item.ProductId, item.ProductName, item.QuantitySold, item.StockLevel, item.Price, item.NeedRestock);
+                var row = table.NewRow();
+                foreach (var prop in properties)
+                {
+                    row[prop.Name] = prop.GetValue(item);
+                }
+                table.Rows.Add(row);
             }
 
             return table;

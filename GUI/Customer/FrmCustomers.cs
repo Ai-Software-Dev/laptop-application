@@ -34,8 +34,7 @@ namespace GUI.Customer
                 module.txt_MaTK.Text = dgv_Customers.Rows[e.RowIndex].Cells[0].Value.ToString();
                 module.txt_TenKH.Text = dgv_Customers.Rows[e.RowIndex].Cells[1].Value.ToString();
                 module.txt_TenTK.Text = dgv_Customers.Rows[e.RowIndex].Cells[2].Value.ToString();
-                module.txt_MatKhau.Text = dgv_Customers.Rows[e.RowIndex].Cells[3].Value.ToString();
-                module.txt_Email.Text = dgv_Customers.Rows[e.RowIndex].Cells[4].Value.ToString();
+                module.txt_Email.Text = dgv_Customers.Rows[e.RowIndex].Cells[3].Value.ToString();
                 module.txt_TenKH.Focus();
                 module.ShowDialog();
             }
@@ -48,8 +47,7 @@ namespace GUI.Customer
                 txt_IDUser.Text = dgv_Customers.CurrentRow.Cells[0].Value.ToString();
                 txt_NameUser.Text = dgv_Customers.CurrentRow.Cells[1].Value.ToString();
                 txt_NameLogin.Text = dgv_Customers.CurrentRow.Cells[2].Value.ToString();
-                txt_Pass.Text = dgv_Customers.CurrentRow.Cells[3].Value.ToString();
-                txt_Email.Text = dgv_Customers.CurrentRow.Cells[4].Value.ToString();
+                txt_Email.Text = dgv_Customers.CurrentRow.Cells[3].Value.ToString();
 
                 dgv_Customers.Cursor = Cursors.Hand;
             }
@@ -58,7 +56,6 @@ namespace GUI.Customer
                 txt_IDUser.Clear();
                 txt_NameUser.Clear();
                 txt_NameLogin.Clear();
-                txt_Pass.Clear();
                 txt_Email.Clear();
                 dgv_Customers.Cursor = Cursors.Default;
             }
@@ -84,7 +81,6 @@ namespace GUI.Customer
                         cus.MaTaiKhoan,
                         cus.TenKhachHang,
                         cus.TenTaiKhoan,
-                        cus.MatKhau,
                         cus.Email
                     );
                 }
@@ -107,7 +103,6 @@ namespace GUI.Customer
                         cus.MaTaiKhoan,
                         cus.TenKhachHang,
                         cus.TenTaiKhoan,
-                        cus.MatKhau,
                         cus.Email
                     );
                 }
